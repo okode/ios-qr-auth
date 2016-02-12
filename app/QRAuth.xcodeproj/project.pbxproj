@@ -12,10 +12,11 @@
 		3E97A8041C6DDD05001FA321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E97A8021C6DDD05001FA321 /* Main.storyboard */; };
 		3E97A8061C6DDD05001FA321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E97A8051C6DDD05001FA321 /* Assets.xcassets */; };
 		3E97A8091C6DDD05001FA321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E97A8071C6DDD05001FA321 /* LaunchScreen.storyboard */; };
-		51CA4F100D614E3CC6C0690E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F5C3CA3519FE70D937A82B /* libPods.a */; };
+		D6928E4CC9282F31306CFC08 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6060A174E0017DDA0313F9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E72F9741C6EA65E001BB91F /* QRAuth-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QRAuth-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E97A7FB1C6DDD05001FA321 /* QRAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E97A7FE1C6DDD05001FA321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E97A8001C6DDD05001FA321 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,8 +24,8 @@
 		3E97A8051C6DDD05001FA321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E97A8081C6DDD05001FA321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E97A80A1C6DDD05001FA321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6060A174E0017DDA0313F9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		770C7968C54AD542ADDF6977 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B9F5C3CA3519FE70D937A82B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D390350780B00E32FBB5B7FE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51CA4F100D614E3CC6C0690E /* libPods.a in Frameworks */,
+				D6928E4CC9282F31306CFC08 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +71,7 @@
 		3E97A7FD1C6DDD05001FA321 /* QRAuth */ = {
 			isa = PBXGroup;
 			children = (
+				3E72F9741C6EA65E001BB91F /* QRAuth-Bridging-Header.h */,
 				3E97A7FE1C6DDD05001FA321 /* AppDelegate.swift */,
 				3E97A8001C6DDD05001FA321 /* ViewController.swift */,
 				3E97A8021C6DDD05001FA321 /* Main.storyboard */,
@@ -83,7 +85,7 @@
 		431AE460FB7CC92C7DC19856 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9F5C3CA3519FE70D937A82B /* libPods.a */,
+				6B6060A174E0017DDA0313F9 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +279,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "QRAuth/QRAuth-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -314,6 +317,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "QRAuth/QRAuth-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
