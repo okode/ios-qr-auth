@@ -1,1 +1,2 @@
 pod 'MBProgressHUD'
+pod 'MobileForms', :git => 'https://github.com/okode/mobileforms.git'
