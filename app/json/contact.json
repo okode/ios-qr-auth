@@ -2,6 +2,21 @@
     "id":"contactDetailForm",
     "sections":[
                 {
+                "title": "Nombre y apellidos",
+                "fields":[
+                        {
+                        "label": "Nombre",
+                        "type": "text",
+                        "name": "name"
+                        },
+                        {
+                        "label": "Apellidos",
+                        "type": "text",
+                        "name": "apellidos"
+                        }
+                        ]
+                },
+                {
                 "title":"Teléfono",
                 "fields":[
                           {
@@ -16,21 +31,17 @@
                           ]
                 },
                 {
-                "title":"Email",
+                "title":"Contacto",
                 "fields":[
                           {
+                          "label": "Correo",
                           "type":"email",
                           "name":"email"
-                          }
-                          ]
-                },
-                {
-                "title":"Dirección",
-                "fields":[
+                          },
                           {
-                          "type":"text",
-                          "name":"direccion[cod_tip_via]",
-                          "value":"La dirección"
+                          "label": "Dirección",
+                          "type": "text",
+                          "name": "address"
                           }
                           ]
                 },
@@ -38,8 +49,8 @@
                 "title":"Observaciones",
                 "fields":[
                           {
-                          "label":"Escribe aquí tu observación",
-                          "placeholder":"Escribe aquí tu observación",
+                          "label":"",
+                          "placeholder":"Escribe aquí tus observaciones",
                           "type":"textarea",
                           "name":"observaciones",
                           "value":"",
@@ -48,5 +59,6 @@
                           }
                           ]
                 }
-                ]
+                ],
+    "submit": "Aceptar"
 }
