@@ -1,0 +1,52 @@
+{
+    "id":"contactDetailForm",
+    "sections":[
+                {
+                "title":"Teléfono",
+                "fields":[
+                          {
+                          "label":"",
+                          "type":"phoneitem",
+                          "name":"telefonosArray[]",
+                          "nametype":"phonetype",
+                          "namephone":"phonenumber",
+                          "phonetypevalues":"domicilio|trabajo|movil",
+                          "phonetypelabels":"Domicilio|Trabajo|Móvil"
+                          }
+                          ]
+                },
+                {
+                "title":"Email",
+                "fields":[
+                          {
+                          "type":"email",
+                          "name":"email"
+                          }
+                          ]
+                },
+                {
+                "title":"Dirección",
+                "fields":[
+                          {
+                          "type":"text",
+                          "name":"direccion[cod_tip_via]",
+                          "value":"La dirección"
+                          }
+                          ]
+                },
+                {
+                "title":"Observaciones",
+                "fields":[
+                          {
+                          "label":"Escribe aquí tu observación",
+                          "placeholder":"Escribe aquí tu observación",
+                          "type":"textarea",
+                          "name":"observaciones",
+                          "value":"",
+                          "filter":"",
+                          "error":""
+                          }
+                          ]
+                }
+                ]
+}
