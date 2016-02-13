@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MobileForms
 
 class ViewController: UIViewController, MFFormDelegate {
 
