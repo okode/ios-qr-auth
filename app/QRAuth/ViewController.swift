@@ -9,14 +9,14 @@
 import UIKit
 import MobileForms
 
-class ViewController: UIViewController, MFFormDelegate {
+class ViewController: UIViewController, FormDelegate {
 
-    var form: MFForm!
+    var form: Form!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form = MFForm(controlledBy: self)
+        form = Form(controller: self)
         form.delegate = self
         
         let filepath = NSBundle.mainBundle().pathForResource("contact", ofType: "json", inDirectory: "json")
@@ -27,12 +27,9 @@ class ViewController: UIViewController, MFFormDelegate {
         } catch { }
 
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
+    func result(data: String) { }
+    func event(eventType: FormEventType, element: String, value: String) { }
     
 }
 
