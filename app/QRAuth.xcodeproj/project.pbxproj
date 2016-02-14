@@ -14,6 +14,7 @@
 		3E97A8041C6DDD05001FA321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E97A8021C6DDD05001FA321 /* Main.storyboard */; };
 		3E97A8061C6DDD05001FA321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E97A8051C6DDD05001FA321 /* Assets.xcassets */; };
 		3E97A8091C6DDD05001FA321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E97A8071C6DDD05001FA321 /* LaunchScreen.storyboard */; };
+		3EA406F11C71372B00CE1169 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA406F01C71372B00CE1169 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3E97A8051C6DDD05001FA321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E97A8081C6DDD05001FA321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E97A80A1C6DDD05001FA321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EA406F01C71372B00CE1169 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		770C7968C54AD542ADDF6977 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B5B3A2749A5B9B3AE5967BDB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D390350780B00E32FBB5B7FE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA406F11C71372B00CE1169 /* AVFoundation.framework in Frameworks */,
 				02AA6E9276BC9B2EC06F5530 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +89,7 @@
 		431AE460FB7CC92C7DC19856 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EA406F01C71372B00CE1169 /* AVFoundation.framework */,
 				B5B3A2749A5B9B3AE5967BDB /* Pods.framework */,
 			);
 			name = Frameworks;
