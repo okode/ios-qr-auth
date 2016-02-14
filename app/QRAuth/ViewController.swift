@@ -92,8 +92,15 @@ class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObj
                 } else {
                     ++qrDetections
                 }
-                if (qrDetections == 20) {
+                if (qrDetections == 10) {
+                    qrCodeFrameView?.removeFromSuperview()
+                    videoPreviewLayer?.removeFromSuperlayer()
+                    captureSession?.stopRunning()
                     print(qrCode)
+                    // AudioServicesPlaySystemSound(1005)
+                    AudioServicesPlaySystemSound(1052)
+                    qrCode = ""
+                    qrDetections = 0
                 }
             }
         }
