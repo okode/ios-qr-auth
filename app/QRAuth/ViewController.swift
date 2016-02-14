@@ -60,7 +60,7 @@ class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObj
         view.layer.addSublayer(videoPreviewLayer!)
         
         captureSession?.startRunning()
-                
+        
         qrCodeFrameView = UIView()
         qrCodeFrameView?.layer.borderColor = UIColor.greenColor().CGColor
         qrCodeFrameView?.layer.borderWidth = 2
