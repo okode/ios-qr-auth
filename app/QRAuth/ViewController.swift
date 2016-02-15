@@ -7,8 +7,10 @@
 //
 
 import UIKit
-import MobileForms
 import AVFoundation
+import MobileForms
+import PKHUD
+import RestFetcher
 
 class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObjectsDelegate {
 
@@ -18,6 +20,7 @@ class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObj
     var qrCodeFrameView: UIView?
     var qrCode = ""
     var qrDetections = 0
+    var jsonData = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +38,8 @@ class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObj
     }
     
     func result(data: String) {
+        jsonData = data
+        
         let captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         
         let input: AVCaptureDeviceInput
@@ -93,17 +98,33 @@ class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObj
                     ++qrDetections
                 }
                 if (qrDetections == 10) {
+                    let url = qrCode
                     qrCodeFrameView?.removeFromSuperview()
                     videoPreviewLayer?.removeFromSuperlayer()
                     captureSession?.stopRunning()
-                    print(qrCode)
-                    // AudioServicesPlaySystemSound(1005)
-                    AudioServicesPlaySystemSound(1052)
                     qrCode = ""
                     qrDetections = 0
+                    AudioServicesPlaySystemSound(1052)
+                    auth(url)
                 }
             }
         }
+    }
+    
+    func auth(url: String) {
+        PKHUD.sharedHUD.contentView = PKHUDTextView(text: "Activando...")
+        PKHUD.sharedHUD.show()
+        
+        RestFetcher(resource: url, method: RestMethod.POST, headers: [String: String](), body: jsonData,
+            successCallback: { (response) -> () in
+                PKHUD.sharedHUD.contentView = PKHUDSuccessView()
+                PKHUD.sharedHUD.hide(afterDelay: 2.0)
+                AudioServicesPlaySystemSound(1005)
+            }, errorCallback: { (error) -> () in
+                PKHUD.sharedHUD.contentView = PKHUDErrorView()
+                PKHUD.sharedHUD.hide(afterDelay: 2.0)
+                AudioServicesPlaySystemSound(1003)
+            }).fetch()
     }
     
 }
