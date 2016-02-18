@@ -12,9 +12,8 @@ import MobileForms
 import PKHUD
 import RestFetcher
 
-class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObjectsDelegate {
+class ViewController: Form, FormDelegate, AVCaptureMetadataOutputObjectsDelegate {
 
-    var form: Form!
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
@@ -25,14 +24,13 @@ class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObj
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form = Form(controller: self)
-        form.delegate = self
+        delegate = self
         
         let filepath = NSBundle.mainBundle().pathForResource("contact", ofType: "json", inDirectory: "json")
         do {
             let contents = try NSString(contentsOfFile: filepath!, usedEncoding: nil) as String
-            form.setForm(contents)
-            form.load()
+            setForm(contents)
+            loadForm()
         } catch { }
 
     }
