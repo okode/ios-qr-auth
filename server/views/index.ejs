@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript" src="assets/qrcode.min.js"></script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body style="background-color: #d81e05">
+<h1 style="text-align:center; color:white; margin-top:20px">MAPFRE QR Auth<h1>
+<div id="qrbox">
+    <div id="qrcode"></div>
+    <p id="text">Envía tus datos desde nuestra app apuntando a este código QR cuando completes el formulario</p>
+<div>
+<script type="text/javascript">
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 300,
+	height : 300
+    });
+    
+    qrcode.makeCode(window.location.href+"<%= token %>");
+
+</script>
+    <script>
+      function updateState(state) {
+          console.log(JSON.stringify(state));
+          alert(JSON.stringify(state));
+      }
+      var host = window.document.location.host.replace(/:.*/, '');
+      var ws = new WebSocket('ws://' + host + ':3002?token=<%= token %>');
+      ws.onmessage = function (event) {
+        updateState(JSON.parse(event.data));
+      };
+    </script>
+</body>
+</html>
