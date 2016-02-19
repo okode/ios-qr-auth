@@ -114,7 +114,7 @@ class ViewController: UIViewController, FormDelegate, AVCaptureMetadataOutputObj
         PKHUD.sharedHUD.contentView = PKHUDTextView(text: "Activando...")
         PKHUD.sharedHUD.show()
         
-        RestFetcher(resource: url, method: RestMethod.POST, headers: [String: String](), body: jsonData,
+        RestFetcher(resource: url, method: RestMethod.POST, headers: ["Content-Type":"application/json"], body: jsonData,
             successCallback: { (response) -> () in
                 PKHUD.sharedHUD.contentView = PKHUDSuccessView()
                 PKHUD.sharedHUD.hide(afterDelay: 2.0)

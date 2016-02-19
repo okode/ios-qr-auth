@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02AA6E9276BC9B2EC06F5530 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B3A2749A5B9B3AE5967BDB /* Pods.framework */; };
+		02AA6E9276BC9B2EC06F5530 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B3A2749A5B9B3AE5967BDB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3E72F9761C6EAE36001BB91F /* json in Resources */ = {isa = PBXBuildFile; fileRef = 3E72F9751C6EAE36001BB91F /* json */; };
 		3E97A7FF1C6DDD05001FA321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97A7FE1C6DDD05001FA321 /* AppDelegate.swift */; };
 		3E97A8011C6DDD05001FA321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97A8001C6DDD05001FA321 /* ViewController.swift */; };
@@ -130,6 +130,7 @@
 				TargetAttributes = {
 					3E97A7FA1C6DDD05001FA321 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = ZQ4562D4C2;
 					};
 				};
 			};
@@ -331,10 +332,13 @@
 			baseConfigurationReference = D390350780B00E32FBB5B7FE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QRAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.okode.QRAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -343,10 +347,13 @@
 			baseConfigurationReference = 770C7968C54AD542ADDF6977 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QRAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.okode.QRAuth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
