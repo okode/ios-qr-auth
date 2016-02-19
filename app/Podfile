@@ -2,3 +2,5 @@ use_frameworks!
 pod 'MobileForms'
 pod 'PKHUD'
 pod 'RestFetcher'
+pod 'Fabric'
+pod 'Crashlytics'
