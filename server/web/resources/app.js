@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 
 var app = express();
 app.set('view engine', 'ejs');
-app.set('views', '/usr/share/qrauthserver/views');
-app.use(express.static('/usr/share/qrauthserver/public'))  
+app.set('views', 'views');
+app.use(express.static('public'))  
 app.use(bodyParser.json()); // support json encoded bodies
 
 app.get('/', function(req, res) {
