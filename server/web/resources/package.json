@@ -1,0 +1,17 @@
+{
+  "name": "ios-qr-auth",
+  "version": "1.0.0",
+  "description": "iOS QR Auth",
+  "author": "Okode <info@okode.com>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body_parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "fs": "*",
+    "ws": "*"
+  }
+}

@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  web:
+    container_name: web
+    build: web
+    hostname: web
+    ports:
+      - "3001:3001"
+      - "3002:3002"
