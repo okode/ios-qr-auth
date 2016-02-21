@@ -9,3 +9,5 @@ services:
     ports:
       - "3001:3001"
       - "3002:3002"
+    volumes:
+      - ./web/resources:/usr/src/app
