@@ -29,6 +29,6 @@ Exposing VM ports
 -----------------
 
     $ brew install nmap
-    $ ncat -4 -kl -p 3001 --sh-exec "ncat 192.168.99.100 3001"
-    $ ncat -4 -kl -p 3002 --sh-exec "ncat 192.168.99.100 3002"
+    $ ncat -4 -kl -p 3001 --sh-exec "ncat $(docker-machine ip) 3001"
+    $ ncat -4 -kl -p 3002 --sh-exec "ncat $(docker-machine ip) 3002"
 
