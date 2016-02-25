@@ -28,7 +28,7 @@ Stopping
 Exposing VM ports
 -----------------
 
-    $ brew install netcat
-    $ while true; do netcat -L $(docker-machine ip):3001 -p 3001; done
-    $ while true; do netcat -L $(docker-machine ip):3002 -p 3002; done
+    $ brew install nmap
+    $ ncat -4 -kl -p 3001 --sh-exec "ncat 192.168.99.100 3001"
+    $ ncat -4 -kl -p 3002 --sh-exec "ncat 192.168.99.100 3002"
 
