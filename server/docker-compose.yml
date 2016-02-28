@@ -3,11 +3,10 @@ version: '2'
 services:
 
   web:
-    container_name: web
-    build: web
-    hostname: web
+    container_name: server
+    build: .
     ports:
       - "3001:3001"
       - "3002:3002"
     volumes:
-      - ./web/resources:/usr/src/app
+      - ./src:/usr/src/app
