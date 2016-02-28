@@ -3,7 +3,8 @@ version: '2'
 services:
 
   web:
-    container_name: server
+    container_name: ios-qr-auth-server
+    image: ios-qr-auth-server
     build: .
     ports:
       - "3001:3001"
