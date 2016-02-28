@@ -2,7 +2,7 @@
 
 FROM node:latest
 
-COPY app /
+COPY app /app
 
 WORKDIR /app
 
