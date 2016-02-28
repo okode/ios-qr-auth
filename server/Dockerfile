@@ -2,7 +2,9 @@
 
 FROM node:latest
 
-WORKDIR /usr/src/app
+COPY app /
+
+WORKDIR /app
 
 EXPOSE 3001 3002
 
