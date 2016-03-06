@@ -11,7 +11,7 @@ Running
 
     $ docker-compose up -d
 
-Open browser at http://$(docker-machine ip):3001
+Open browser at http://$(docker-machine ip):8080
 
 Developing
 ----------
@@ -29,6 +29,6 @@ Exposing VM ports
 -----------------
 
     $ brew install nmap
-    $ ncat -4 -kl -p 3001 --sh-exec "ncat $(docker-machine ip) 3001"
-    $ ncat -4 -kl -p 3002 --sh-exec "ncat $(docker-machine ip) 3002"
+    $ ncat -4 -kl -p 8080 --sh-exec "ncat $(docker-machine ip) 8080"
+    $ ncat -4 -kl -p 8081 --sh-exec "ncat $(docker-machine ip) 8081"
 

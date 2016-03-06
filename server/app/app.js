@@ -25,11 +25,11 @@ app.post('/:token', function(req, res) {
     }
 });
 
-app.listen(3001);
+app.listen(8080);
 
 var clients = {};
 
-var wss = new webSocketServer({port:3002});
+var wss = new webSocketServer({port:8081});
 wss.on('connection', function(ws) {
     var url = ws.upgradeReq.url;
     var token = url.substr(url.indexOf('=') + 1);
