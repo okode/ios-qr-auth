@@ -3,9 +3,10 @@ version: '2'
 services:
 
   web:
-    container_name: ios-qr-auth-server
-    image: ios-qr-auth-server
+    container_name: ios-qr-auth
+    image: okode/ios-qr-auth
     build: .
     ports:
-      - "8080:8080"
-      - "8081:8081"
+      - "8080-8081:8080-8081"
+    volumes:
+      - ./app:/app
