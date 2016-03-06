@@ -42,7 +42,7 @@
           document.getElementById("json").innerHTML = jsonPretty;
       }
       var host = window.document.location.host.replace(/:.*/, '');
-      var ws = new WebSocket('ws://' + host + ':3002?token=<%= token %>');
+      var ws = new WebSocket('ws://' + host + ':8081?token=<%= token %>');
       ws.onmessage = function (event) {
         updateState(JSON.parse(event.data));
       };
