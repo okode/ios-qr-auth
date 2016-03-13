@@ -6,6 +6,6 @@ COPY app /app
 
 WORKDIR /app
 
-EXPOSE 8080 8081
+EXPOSE 80
 
 CMD npm install && npm start

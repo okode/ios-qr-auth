@@ -28,7 +28,8 @@ Stopping
 Exposing VM ports
 -----------------
 
+Replace 8080 with your desired exposed port:
+
     $ brew install nmap
-    $ ncat -4 -kl -p 8080 --sh-exec "ncat $(docker-machine ip) 8080"
-    $ ncat -4 -kl -p 8081 --sh-exec "ncat $(docker-machine ip) 8081"
+    $ ncat -4 -kl -p 8080 --sh-exec "ncat $(docker-machine ip) 80"
 
