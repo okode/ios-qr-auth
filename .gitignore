@@ -5,5 +5,4 @@ Podfile.lock
 Pods
 node_modules
 npm-debug.log
-.gradle
-build
+output
