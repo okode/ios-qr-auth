@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02AA6E9276BC9B2EC06F5530 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B3A2749A5B9B3AE5967BDB /* Pods.framework */; };
 		3E72F9761C6EAE36001BB91F /* json in Resources */ = {isa = PBXBuildFile; fileRef = 3E72F9751C6EAE36001BB91F /* json */; };
 		3E97A7FF1C6DDD05001FA321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97A7FE1C6DDD05001FA321 /* AppDelegate.swift */; };
 		3E97A8011C6DDD05001FA321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97A8001C6DDD05001FA321 /* ViewController.swift */; };
@@ -15,9 +14,11 @@
 		3E97A8061C6DDD05001FA321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E97A8051C6DDD05001FA321 /* Assets.xcassets */; };
 		3E97A8091C6DDD05001FA321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E97A8071C6DDD05001FA321 /* LaunchScreen.storyboard */; };
 		3EA406F11C71372B00CE1169 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA406F01C71372B00CE1169 /* AVFoundation.framework */; };
+		73CC93CD31F931BDAD48DAF6 /* Pods_QRAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4B079229C351E6807D5617 /* Pods_QRAuth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12538DA89D578322DD2A5EEF /* Pods-QRAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRAuth/Pods-QRAuth.release.xcconfig"; sourceTree = "<group>"; };
 		3E72F9751C6EAE36001BB91F /* json */ = {isa = PBXFileReference; lastKnownFileType = folder; path = json; sourceTree = "<group>"; };
 		3E97A7FB1C6DDD05001FA321 /* QRAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E97A7FE1C6DDD05001FA321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,9 +28,9 @@
 		3E97A8081C6DDD05001FA321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E97A80A1C6DDD05001FA321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EA406F01C71372B00CE1169 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		770C7968C54AD542ADDF6977 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9C4B079229C351E6807D5617 /* Pods_QRAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B3A2749A5B9B3AE5967BDB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D390350780B00E32FBB5B7FE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BE9E8CADFA83C7321DD55F48 /* Pods-QRAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRAuth/Pods-QRAuth.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,18 +39,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EA406F11C71372B00CE1169 /* AVFoundation.framework in Frameworks */,
-				02AA6E9276BC9B2EC06F5530 /* Pods.framework in Frameworks */,
+				73CC93CD31F931BDAD48DAF6 /* Pods_QRAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		150E63D357B1878081CDBF56 /* Pods */ = {
+		13887E1C9BC52E011C08DCD1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D390350780B00E32FBB5B7FE /* Pods.debug.xcconfig */,
-				770C7968C54AD542ADDF6977 /* Pods.release.xcconfig */,
+				BE9E8CADFA83C7321DD55F48 /* Pods-QRAuth.debug.xcconfig */,
+				12538DA89D578322DD2A5EEF /* Pods-QRAuth.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -60,8 +61,8 @@
 				3E97A7FD1C6DDD05001FA321 /* QRAuth */,
 				3E72F9751C6EAE36001BB91F /* json */,
 				3E97A7FC1C6DDD05001FA321 /* Products */,
-				150E63D357B1878081CDBF56 /* Pods */,
 				431AE460FB7CC92C7DC19856 /* Frameworks */,
+				13887E1C9BC52E011C08DCD1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +92,7 @@
 			children = (
 				3EA406F01C71372B00CE1169 /* AVFoundation.framework */,
 				B5B3A2749A5B9B3AE5967BDB /* Pods.framework */,
+				9C4B079229C351E6807D5617 /* Pods_QRAuth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,13 +104,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E97A80D1C6DDD05001FA321 /* Build configuration list for PBXNativeTarget "QRAuth" */;
 			buildPhases = (
-				98BD222AE805DB97145164D9 /* Check Pods Manifest.lock */,
+				3FB6E51F5D37B4C4A5019405 /* 📦 Check Pods Manifest.lock */,
 				3E97A7F71C6DDD05001FA321 /* Sources */,
 				3E97A7F81C6DDD05001FA321 /* Frameworks */,
 				3E97A7F91C6DDD05001FA321 /* Resources */,
-				EE1CC7DBDC62046D304BD005 /* Embed Pods Frameworks */,
-				5AEFD89B21404A67CA1C6F74 /* Copy Pods Resources */,
 				3E738BD01C76EE3300516ECD /* ShellScript */,
+				5DAFB69245DEE1747EB8F7C4 /* 📦 Embed Pods Frameworks */,
+				3D95A17CAEF9827AFB89C473 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,6 +169,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3D95A17CAEF9827AFB89C473 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRAuth/Pods-QRAuth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3E738BD01C76EE3300516ECD /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,29 +197,14 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 51a920f68611292bc387b86e9ffa20553d095372 ${OKODE_CRASHLYTICS_BUILD_SECRET}";
 		};
-		5AEFD89B21404A67CA1C6F74 /* Copy Pods Resources */ = {
+		3FB6E51F5D37B4C4A5019405 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98BD222AE805DB97145164D9 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,19 +212,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		EE1CC7DBDC62046D304BD005 /* Embed Pods Frameworks */ = {
+		5DAFB69245DEE1747EB8F7C4 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRAuth/Pods-QRAuth-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -343,7 +345,7 @@
 		};
 		3E97A80E1C6DDD05001FA321 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D390350780B00E32FBB5B7FE /* Pods.debug.xcconfig */;
+			baseConfigurationReference = BE9E8CADFA83C7321DD55F48 /* Pods-QRAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRAuth/Info.plist;
@@ -355,7 +357,7 @@
 		};
 		3E97A80F1C6DDD05001FA321 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 770C7968C54AD542ADDF6977 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 12538DA89D578322DD2A5EEF /* Pods-QRAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRAuth/Info.plist;
